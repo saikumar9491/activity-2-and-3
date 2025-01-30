@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Task</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #5a7d4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Content Sections */
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+            position: relative;
+            flex-grow: 1;
+            padding-bottom: 20px;
+        }
+
+        .content-box {
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 45%;
+            position: absolute;
+        }
+
+        .content-box:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+
+        .content-box:nth-child(2) {
+            top: 0;
+            right: 0;
+        }
+
+        .content-box:nth-child(3) {
+            top: 150px;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Your Website Task</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section class="content-box">
+            <h2>About CSS</h2>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>Box Model</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding, and the actual content.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [Student Name] | Follow us on 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
